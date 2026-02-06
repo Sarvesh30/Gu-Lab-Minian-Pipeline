@@ -1,4 +1,4 @@
-name: minian
+name: minian-gu-lab
 channels:
   - bioconda
   - conda-forge
