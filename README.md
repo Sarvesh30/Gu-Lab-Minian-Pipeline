@@ -40,12 +40,12 @@ cd path/to/Gu-Lab-Minian-Pipeline
 conda env create -f environment.yml
 ```
 
-This will create a new conda environment named `minian` (or the name specified in `environment.yml`) with all necessary packages.
+This will create a new conda environment named `minian-gu-lab` with all necessary packages.
 
 ### 4. Activate the Environment
 
 ```bash
-conda activate minian
+conda activate minian-gu-lab
 ```
 
 ### 5. Install the Package in Development Mode
@@ -62,7 +62,7 @@ The `-e` flag installs the package in "editable" mode, so any changes you make t
 
 1. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
 2. Type "Python: Select Interpreter"
-3. Choose the `minian` conda environment from the list
+3. Choose the `minian-gu-lab` conda environment from the list
 
 ### 7. Verify Installation
 
@@ -77,7 +77,7 @@ print(minian.__version__)
 
 The optimized pipeline notebooks are located in the `notebooks/` directory. To start working:
 
-1. Ensure the `minian` environment is activated
+1. Ensure the `minian-gu-lab` environment is activated
 2. Launch Jupyter from the project root:
    ```bash
    jupyter notebook
@@ -150,9 +150,9 @@ Use descriptive branch names:
 **Issue: Jupyter kernel not found**
 - Solution: Install ipykernel in the environment:
   ```bash
-  conda activate minian
+  conda activate minian-gu-lab
   conda install ipykernel
-  python -m ipykernel install --user --name minian --display-name "Python (minian)"
+  python -m ipykernel install --user --name minian-gu-lab --display-name "Python (minian-gu-lab)"
   ```
 
 **Issue: Import errors after modifying source code**
@@ -162,7 +162,7 @@ Use descriptive branch names:
 - Solution: Delete and recreate the environment:
   ```bash
   conda deactivate
-  conda env remove -n minian
+  conda env remove -n minian-gu-lab
   conda env create -f environment.yml
   ```
 
