@@ -73,6 +73,12 @@ import minian
 print(minian.__version__)
 ```
 
+### 8. Exporting Plots
+```bash
+pip install shot-scraper
+python -m playwright install chromium
+```
+
 ## Working with Notebooks
 
 The optimized pipeline notebooks are located in the `notebooks/` directory. To start working:
