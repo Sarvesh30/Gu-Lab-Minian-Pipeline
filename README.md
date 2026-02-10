@@ -27,7 +27,7 @@ Open the cloned folder in Visual Studio Code:
 
 The repository includes an `environment.yml` file with all required dependencies. Create the environment using one of these methods:
 
-#### Option A: Using VS Code Terminal
+#### Option A: Using VS Code Terminal (Go to Option B if conda commands do not work)
 1. Open the integrated terminal in VS Code (`Ctrl+` ` or `View → Terminal`)
 2. Run:
 ```bash
@@ -37,7 +37,7 @@ conda env create -f environment.yml
 #### Option B: Using Anaconda Prompt (Windows) or Terminal (Mac/Linux)
 ```bash
 cd path/to/Gu-Lab-Minian-Pipeline
-conda env create -f environment.yml
+conda env create -f environment.yml --solver=libmamba
 ```
 
 This will create a new conda environment named `minian-gu-lab` with all necessary packages.
